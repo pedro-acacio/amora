@@ -8,9 +8,8 @@ export const MARCA_COMPLETA = "Amora · Papelaria Afetiva";
 export const NOME_ANTIGO = "Amor à Palavra";
 
 export const WHATSAPP_LINK = "https://wa.me/message/M3VAFNGWTWK3M1";
-// Instagram ainda no @ antigo: trocar quando a loja confirmar o novo perfil.
-export const INSTAGRAM_URL = "https://www.instagram.com/amor_apalavra";
-export const INSTAGRAM_HANDLE = "@amor_apalavra";
+export const INSTAGRAM_URL = "https://www.instagram.com/amora.afetivaa";
+export const INSTAGRAM_HANDLE = "@amora.afetivaa";
 export const LOCAL = "Recife/PE";
 export const FUNDADORA = "Gabi Andrade";
 
