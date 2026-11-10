@@ -12,10 +12,10 @@ const PRODUTO_OPTIONS = [
 ];
 
 const inputClass =
-  "w-full px-4 py-2.5 rounded-lg border border-vinho/15 bg-white/60 text-vinho text-sm outline-none focus:border-rosa transition-colors";
+  "w-full px-4 py-2.5 rounded-lg border border-vinho/15 bg-white/70 text-vinho text-sm outline-none focus:border-amora transition-colors";
 
 function buildMessage(data) {
-  const lines = ["*Novo pedido — Amor à Palavra*", ""];
+  const lines = ["*Novo pedido · Amora Papelaria Afetiva*", ""];
   if (data.nome) lines.push(`Nome: ${data.nome}`);
   if (data.produto) lines.push(`Produto de interesse: ${data.produto}`);
   if (data.personalizacao) lines.push(`Personalização desejada: ${data.personalizacao}`);
@@ -38,7 +38,7 @@ export default function PedidoForm() {
   if (done) {
     return (
       <div className="flex flex-col items-center text-center gap-3 py-8">
-        <CheckCircle2 size={36} className="text-rosa" />
+        <CheckCircle2 size={36} className="text-amora" />
         <p className="font-display text-xl text-vinho">Pedido pronto!</p>
         <p className="text-sm text-vinho/70 max-w-sm leading-relaxed">
           Abrimos o WhatsApp com as informações do seu pedido preenchidas. É só
@@ -50,7 +50,7 @@ export default function PedidoForm() {
             setData({});
             setDone(false);
           }}
-          className="mt-2 text-sm font-medium text-rosa hover:underline"
+          className="mt-2 text-sm font-medium text-amora hover:underline"
         >
           Fazer outro pedido
         </button>
@@ -85,7 +85,7 @@ export default function PedidoForm() {
                 required
                 checked={data.produto === opt}
                 onChange={() => setValue("produto", opt)}
-                className="accent-rosa w-4 h-4 shrink-0"
+                className="accent-amora w-4 h-4 shrink-0"
               />
               {opt}
             </label>
@@ -110,7 +110,7 @@ export default function PedidoForm() {
 
       <button
         type="submit"
-        className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium bg-rosa text-creme hover:bg-vinho transition-colors mt-2"
+        className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold bg-amora text-creme hover:bg-vinho transition-colors mt-2"
       >
         <Send size={16} /> Enviar pelo WhatsApp
       </button>

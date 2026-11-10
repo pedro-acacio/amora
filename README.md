@@ -1,7 +1,8 @@
-# Amor à Palavra
+# Amora · Papelaria Afetiva
 
-Landing page for Loja Amor à Palavra — devotional notebooks, Bible study
-materials, planners and handmade diaries, crafted by Gabi Andrade in Recife-PE, Brazil.
+Landing page for Amora (formerly Amor à Palavra) — devotional notebooks,
+Bible study materials, planners and handmade diaries, crafted by Gabi Andrade
+in Recife-PE, Brazil.
 
 ## Stack
 
@@ -25,8 +26,8 @@ npm run build
 ## Content
 
 This project was created from the structure of the Mahut Arquitetura landing
-page, adapted for Amor à Palavra. The copy and palette are a draft based on
-the public Instagram bio and feed (@amor_apalavra) — update them in
+page, adapted for Amor à Palavra (now Amora). The copy is a draft based on
+the public Instagram bio and feed (now @amora.afetivaa) — update it in
 `src/data.js` with the brand's real copy.
 
 The "Galeria" (Gallery) section (`src/components/Galeria.jsx`) uses illustrated
@@ -38,13 +39,23 @@ in `data.js`, as done with `PROJETOS` in the original project.
 
 ## Visual identity
 
-The store's official logo is in `src/assets/logo.jpg` (also used as the
-favicon in `public/favicon.jpg`) and is displayed by `src/components/Logo.jsx`,
-used in the header, footer, hero and "Sobre" (About) section. Palette taken
-from it: `#faf3e4` (cream), `#d8527d` (pink), `#55231f` (wine), `#cf9a4c`
-(gold). Display typeface: Playfair Display; handwritten accents: Caveat;
-body text: Nunito.
+Rebrand of Nov 2026: the store is now **Amora · Papelaria Afetiva**.
+Everything comes from the official brand presentation sent by the client
+(`Logo_Amora_Apresentação.pdf`):
 
-The spiral notebooks in `src/components/NotebookMock.jsx` are a reference
-to the store's real product, used as a placeholder in the gallery until we
-have real photos.
+- `src/assets/marca/*.svg`: vector logo extracted from the PDF, in colour and
+  cream versions, plus the standalone symbol (leaves + mulberries) and the
+  standalone "Amora" wordmark. `src/components/Logo.jsx` builds the
+  horizontal version (nav) and the full one (footer, "Sobre" section).
+- `src/assets/marca/*.webp`: illustrations from the presentation itself
+  (cut-out mulberry branch, leaf, wine leaf texture, notebook mockup).
+- Palette (tokens in `src/index.css`): wines `#391120` `#703945` `#a16b71`,
+  olives `#343419` `#56583c` `#9d9a79`, cream `#eee3d7`. Gold `#c9a24d` is
+  only used as a finish, like the hot stamping in the mockups.
+- Typography: DM Serif Display for headings (high-contrast serif, close to
+  the logo's wordmark) and Nunito Sans for body text (free stand-in for the
+  Avenir used in "PAPELARIA AFETIVA").
+- Elements: the logo's ——✦—— divider (`Ornamento.jsx`), the leaf texture on
+  wine sections (`.fundo-folhas`) and gold-spiral notebooks with the symbol
+  (`NotebookMock.jsx`) as gallery placeholders until we have real photos.
+- Favicon: `public/favicon.svg` (symbol) + 32/180/512 PNGs.

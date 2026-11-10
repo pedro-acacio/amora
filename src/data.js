@@ -1,8 +1,14 @@
-// Conteúdo da Amor à Palavra — rascunho inicial a partir da bio e do feed
-// públicos do Instagram (@amor_apalavra). Ajuste os textos com o material
-// que a Gabi tiver (frases da marca, fotos reais dos produtos etc.).
+// Conteúdo da Amora · Papelaria Afetiva (antiga Amor à Palavra).
+// Rascunho a partir da bio/feed públicos do Instagram e da apresentação de
+// marca enviada pela cliente. Ajuste os textos com o material da Gabi
+// (frases da marca, fotos reais dos produtos etc.).
+
+export const MARCA = "Amora";
+export const MARCA_COMPLETA = "Amora · Papelaria Afetiva";
+export const NOME_ANTIGO = "Amor à Palavra";
 
 export const WHATSAPP_LINK = "https://wa.me/message/M3VAFNGWTWK3M1";
+// Instagram ainda no @ antigo: trocar quando a loja confirmar o novo perfil.
 export const INSTAGRAM_URL = "https://www.instagram.com/amor_apalavra";
 export const INSTAGRAM_HANDLE = "@amor_apalavra";
 export const LOCAL = "Recife/PE";
@@ -18,12 +24,27 @@ export const NAV_LINKS = [
 ];
 
 export const MISSAO = [
-  "Amor à Palavra nasceu de um propósito simples: usar a criatividade e o trabalho manual para te aproximar da Bíblia todos os dias.",
-  "Cada caderno é pensado como uma ferramenta de fé — um espaço para anotar, estudar, orar e organizar a rotina com a Palavra no centro.",
+  "A Amora é uma papelaria que une organização, criatividade e afeto. Cada caderno é feito à mão para te aproximar da Bíblia todos os dias: um espaço para anotar, estudar, orar e organizar a rotina com a Palavra no centro.",
+  "O nome nasceu do Amor à Palavra, como a loja se chamava antes. Juntamos as duas palavras numa só, mais curta e fácil de lembrar, e o propósito continua o mesmo.",
+];
+
+export const CONCEITO = [
+  {
+    title: "Folhas da amora",
+    text: "Lembram as páginas de um caderno aberto: estudo, conhecimento e criação.",
+  },
+  {
+    title: "Duas amoras",
+    text: "Unidas no centro, formam um coração. É o cuidado afetivo que vai em cada peça.",
+  },
+  {
+    title: "Livro e caderno",
+    text: "O universo da papelaria, da organização e do registro de ideias e aprendizados.",
+  },
 ];
 
 export const SOBRE_FUNDADORA =
-  "Por trás da Amor à Palavra está Gabi Andrade, que transformou o cuidado com a encadernação artesanal em uma loja dedicada a produtos devocionais. Cada peça é feita à mão, em pequenos lotes, com tecidos escolhidos um a um — do primeiro corte de tecido até o acabamento da capa dura, pensando em quem vai usar aquele caderno para se aproximar de Deus.";
+  "Por trás da Amora está Gabi Andrade, que transformou o cuidado com a encadernação artesanal em uma papelaria dedicada a produtos devocionais. Cada peça é feita à mão, em pequenos lotes, com tecidos escolhidos um a um, do primeiro corte até o acabamento da capa dura, pensando em quem vai usar aquele caderno para se aproximar de Deus.";
 
 export const COMO_FUNCIONA =
   "Os pedidos são feitos sob encomenda, direto pelo WhatsApp. Você escolhe o modelo, o tecido da capa e a personalização; a Gabi cuida da produção artesanal e do envio para todo o Brasil pelos Correios, com atendimento também presencial em Recife-PE.";
@@ -31,7 +52,7 @@ export const COMO_FUNCIONA =
 export const PRODUTOS = [
   {
     title: "Cadernos Devocionais",
-    text: "Cadernos artesanais com capa dura revestida em tecido floral, feitos para o seu tempo diário com Deus — leitura, oração e reflexão.",
+    text: "Cadernos artesanais com capa dura revestida em tecido, feitos para o seu tempo diário com Deus: leitura, oração e reflexão.",
   },
   {
     title: "Estudo Bíblico",

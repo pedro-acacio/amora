@@ -6,10 +6,10 @@ import { WHATSAPP_LINK, INSTAGRAM_URL, INSTAGRAM_HANDLE, LOCAL } from "../data";
 
 export default function Contato() {
   return (
-    <section id="contato" className="px-6 py-24 bg-creme">
+    <section id="contato" className="px-6 py-24 bg-papel">
       <div className="max-w-5xl mx-auto grid md:grid-cols-[minmax(0,300px)_1fr] gap-14 items-start">
         <Reveal>
-          <span className="text-xs tracking-[0.2em] text-rosa font-medium uppercase">
+          <span className="rotulo text-oliva">
             Contato
           </span>
           <h2 className="font-display text-3xl md:text-4xl text-vinho mt-4">
@@ -25,22 +25,22 @@ export default function Contato() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-3 text-vinho/85 hover:text-rosa transition-colors"
+              className="flex items-center gap-3 text-vinho/85 hover:text-amora transition-colors"
             >
-              <MessageCircle size={18} className="text-rosa" />
+              <MessageCircle size={18} className="text-amora" />
               Chamar no WhatsApp
             </a>
             <a
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-3 text-vinho/85 hover:text-rosa transition-colors"
+              className="flex items-center gap-3 text-vinho/85 hover:text-amora transition-colors"
             >
-              <InstagramIcon size={18} className="text-rosa" />
+              <InstagramIcon size={18} className="text-amora" />
               {INSTAGRAM_HANDLE}
             </a>
             <div className="flex items-center gap-3 text-vinho/85">
-              <MapPin size={18} className="text-rosa" />
+              <MapPin size={18} className="text-amora" />
               {LOCAL}
             </div>
           </div>
