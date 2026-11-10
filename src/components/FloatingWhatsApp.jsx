@@ -4,9 +4,7 @@ import { WHATSAPP_LINK } from "../data";
 export default function FloatingWhatsApp() {
   return (
     <a
-      href={`${WHATSAPP_LINK}?text=${encodeURIComponent(
-        "Oi! Vim pelo site da Amora."
-      )}`}
+      href={WHATSAPP_LINK}
       target="_blank"
       rel="noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-amora text-creme shadow-xl hover:bg-vinho transition-colors"

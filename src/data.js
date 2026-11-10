@@ -7,7 +7,15 @@ export const MARCA = "Amora";
 export const MARCA_COMPLETA = "Amora · Papelaria Afetiva";
 export const NOME_ANTIGO = "Amor à Palavra";
 
-export const WHATSAPP_LINK = "https://wa.me/message/M3VAFNGWTWK3M1";
+// Número da loja (o mesmo do link wa.me/message da bio do Instagram).
+// Usamos wa.me/<número>?text= porque o link curto /message/ não aceita
+// mensagem pronta: com ?text= o WhatsApp abria a tela de encaminhar.
+export const WHATSAPP_NUMERO = "558196194844";
+export const WHATSAPP_MENSAGEM =
+  "Oi! Vim pelo site da Amora e gostaria de fazer um pedido.";
+export const whatsappLink = (texto = WHATSAPP_MENSAGEM) =>
+  `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(texto)}`;
+export const WHATSAPP_LINK = whatsappLink();
 export const INSTAGRAM_URL = "https://www.instagram.com/amora.afetivaa";
 export const INSTAGRAM_HANDLE = "@amora.afetivaa";
 export const LOCAL = "Recife/PE";

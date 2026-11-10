@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Send, CheckCircle2 } from "lucide-react";
-import { WHATSAPP_LINK } from "../data";
+import { whatsappLink } from "../data";
 
 const PRODUTO_OPTIONS = [
   "Caderno devocional",
@@ -31,7 +31,7 @@ export default function PedidoForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const text = buildMessage(data);
-    window.open(`${WHATSAPP_LINK}?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(whatsappLink(text), "_blank");
     setDone(true);
   };
 
