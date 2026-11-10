@@ -2,7 +2,6 @@ import { MessageCircle, ArrowDown } from "lucide-react";
 import Reveal from "./Reveal";
 import Ornamento from "./Ornamento";
 import caderno from "../assets/marca/caderno-amora.webp";
-import ramo from "../assets/marca/ramo-amora.svg";
 import folha from "../assets/marca/folha.webp";
 import { WHATSAPP_LINK } from "../data";
 
@@ -56,12 +55,6 @@ export default function Hero() {
               src={caderno}
               alt="Caderno de capa vinho com o logo da Amora em dourado"
               className="w-full aspect-[688/900] object-cover rounded-2xl shadow-2xl rotate-2"
-            />
-            <img
-              src={ramo}
-              alt=""
-              aria-hidden="true"
-              className="absolute -top-12 -left-2 md:-top-16 md:-left-14 w-24 md:w-32 -scale-x-100 -rotate-6 pointer-events-none"
             />
             <div className="absolute -bottom-6 -left-4 md:-left-10 bg-vinho text-creme rounded-xl px-6 py-4 shadow-lg max-w-[220px]">
               <p className="font-display text-xl leading-snug">Feito à mão</p>
